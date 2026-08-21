@@ -1,57 +1,55 @@
-/* Full-screen seamless cosmic background */
-body {
-    margin: 0;
-    padding: 0;
-    background: url('YOUR-BACKGROUND-IMAGE-NAME.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #f1f5f9;
-    font-family: system-ui, -apple-system, sans-serif;
-    line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saul Lucien Entertainment, LLC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* Main wrapper spanning edge-to-edge with clean side padding */
-.main-container {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem 1.5rem;
-    box-sizing: border-box;
-}
+    <div class="main-container">
+        <!-- Hero Section with Standalone Cosmic Logo & Mission -->
+        <header>
+            <div class="logo-container">
+                <!-- Replace with your exact logo image filename -->
+                <img src="your-cosmic-logo.jpg" alt="Saul Lucien Entertainment Logo" class="brand-logo">
+            </div>
+            <h1>Saul Lucien Entertainment, LLC</h1>
+            <p class="tagline">Cosmic Experience Design & Brand Management</p>
+            <p class="mission-text">
+                Harnessing Artificial Intelligence to elevate music, pioneer technology, and drive the evolution of our race.
+            </p>
+        </header>
 
-/* Frosted glass cards for sections without harsh borders */
-section, header {
-    background: rgba(10, 15, 30, 0.75);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 12px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border: 1px solid rgba(0, 240, 255, 0.2); /* Subtle futuristic glow */
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-}
+        <!-- About Us Section -->
+        <section>
+            <h2>About Us</h2>
+            <p>
+                Welcome to the official portal for Saul Lucien Entertainment. We are dedicated to delivering world-class entertainment solutions, leveraging advanced AI frameworks, and shaping the future of digital and cosmic experiences.
+            </p>
+        </section>
 
-/* Futuristic Gold & Cyan Typography Styling */
-h1, h2 {
-    color: #ffd700; /* Metallic gold */
-    text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
-    font-weight: 700;
-    letter-spacing: 1px;
-}
+        <!-- Services Section -->
+        <section>
+            <h2>Services & Innovation</h2>
+            <ul>
+                <li>🎭 <strong>Entertainment Production:</strong> Next-gen live events, immersive performances, and cosmic brand experiences.</li>
+                <li>🤖 <strong>AI Music & Tech Promotion:</strong> Cutting-edge promotional strategies driven by artificial intelligence to push our technological culture forward.</li>
+                <li>🌌 <strong>Cosmic Experience Design:</strong> Custom high-resolution digital architecture, branding, and futuristic interfaces.</li>
+            </ul>
+        </section>
 
-p, li {
-    color: #e2e8f0;
-    font-size: 1.05rem;
-}
+        <!-- Contact Footer -->
+        <footer>
+            <h2>Contact</h2>
+            <p>Ready to build the future? Reach out directly:</p>
+            <p>
+                📧 <a href="mailto:saul.lucien.entertainment@gmail.com">saul.lucien.entertainment@gmail.com</a><br>
+                📞 <a href="tel:5716503340">(571) 650-3340</a>
+            </p>
+        </footer>
+    </div>
 
-/* Contact footer info */
-footer {
-    text-align: center;
-    padding: 2rem 0;
-    color: #94a3b8;
-    font-size: 0.95rem;
-}
-
-footer a {
-    color: #00f0ff;
-    text-decoration: none;
-}
+</body>
+</html>
