@@ -8,6 +8,7 @@
 </head>
 <body>
     <header>
+        <img src="Main_header.png" alt="Saul Lucien Entertainment Header">
         <h1>Saul Lucien Entertainment, LLC</h1>
         <p class="entity-tag">Cosmic Experience Design & Brand Management</p>
     </header>
@@ -16,11 +17,15 @@
         <section class="hero">
             <h2>Welcome to Official Enterprise Design</h2>
             <p>Cosmic-themed visual branding, meteor fields, and gold metallic accents.</p>
+            <p style="margin-top: 20px; font-size: 0.95em;">
+                📧 <a href="mailto:saul.lucien.entertainment@gmail.com">saul.lucien.entertainment@gmail.com</a> | 
+                📞 <a href="tel:5716503340">(571) 650-3340</a>
+            </p>
         </section>
     </main>
 
     <footer>
-        <p>Contact: saul.lucien.entertainment@gmail.com | (571) 650-3340</p>
+        <p>&copy; 2026 Saul Lucien Entertainment, LLC. All rights reserved.</p>
         <p><a href="https://saullucienentertainment-design.github.io/" target="_blank">Official Portfolio Website</a></p>
     </footer>
 </body>
