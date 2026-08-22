@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img src="Main_header.png" alt="Saul Lucien Entertainment Header">
+        <img src="main_header.png" alt="Saul Lucien Entertainment Header">
         <h1>Saul Lucien Entertainment, LLC</h1>
         <p class="entity-tag">Cosmic Experience Design & Brand Management</p>
     </header>
