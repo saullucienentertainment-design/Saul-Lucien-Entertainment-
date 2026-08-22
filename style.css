@@ -1,55 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saul Lucien Entertainment, LLC</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <div class="main-container">
-        <!-- Hero Section with Standalone Cosmic Logo & Mission -->
-        <header>
-            <div class="logo-container">
-                <!-- Replace with your exact logo image filename -->
-                <img src="your-cosmic-logo.jpg" alt="Saul Lucien Entertainment Logo" class="brand-logo">
-            </div>
-            <h1>Saul Lucien Entertainment, LLC</h1>
-            <p class="tagline">Cosmic Experience Design & Brand Management</p>
-            <p class="mission-text">
-                Harnessing Artificial Intelligence to elevate music, pioneer technology, and drive the evolution of our race.
-            </p>
-        </header>
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-image: url('main_background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
-        <!-- About Us Section -->
-        <section>
-            <h2>About Us</h2>
-            <p>
-                Welcome to the official portal for Saul Lucien Entertainment. We are dedicated to delivering world-class entertainment solutions, leveraging advanced AI frameworks, and shaping the future of digital and cosmic experiences.
-            </p>
-        </section>
+/* Header - Fixed at the top */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 0;
+    margin: 0;
+    background: none;
+}
 
-        <!-- Services Section -->
-        <section>
-            <h2>Services & Innovation</h2>
-            <ul>
-                <li>🎭 <strong>Entertainment Production:</strong> Next-gen live events, immersive performances, and cosmic brand experiences.</li>
-                <li>🤖 <strong>AI Music & Tech Promotion:</strong> Cutting-edge promotional strategies driven by artificial intelligence to push our technological culture forward.</li>
-                <li>🌌 <strong>Cosmic Experience Design:</strong> Custom high-resolution digital architecture, branding, and futuristic interfaces.</li>
-            </ul>
-        </section>
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 300px;
+    object-fit: cover;
+}
 
-        <!-- Contact Footer -->
-        <footer>
-            <h2>Contact</h2>
-            <p>Ready to build the future? Reach out directly:</p>
-            <p>
-                📧 <a href="mailto:saul.lucien.entertainment@gmail.com">saul.lucien.entertainment@gmail.com</a><br>
-                📞 <a href="tel:5716503340">(571) 650-3340</a>
-            </p>
-        </footer>
-    </div>
+header h1 {
+    display: none;
+}
 
-</body>
-</html>
+header .entity-tag {
+    display: none;
+}
+
+/* Main Content - Offset to account for fixed header */
+main {
+    margin-top: 320px;
+    padding: 40px 20px;
+    min-height: calc(100vh - 320px);
+}
+
+.hero {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #666;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.hero a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 2px solid #FFD700;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header img {
+        max-height: 200px;
+    }
+
+    main {
+        margin-top: 220px;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .hero h2 {
+        font-size: 1.5em;
+    }
+}
