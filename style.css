@@ -21,16 +21,15 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-color: #000;
-    position: relative;
 }
 
-/* Header - Fixed position, overlays background */
+/* Header - Fixed position, part of the background layer */
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 500;
+    z-index: 100;
     padding: 0;
     margin: 0;
     background: transparent;
@@ -40,7 +39,6 @@ header img {
     width: 100%;
     height: auto;
     display: block;
-    opacity: 1;
 }
 
 header h1 {
@@ -51,10 +49,10 @@ header .entity-tag {
     display: none;
 }
 
-/* Main Content - Positioned below header, background visible behind */
+/* Main Content - Positioned below header */
 main {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     margin-top: 300px;
     padding: 40px 20px;
     min-height: calc(100vh - 300px);
@@ -103,7 +101,7 @@ footer {
     border-top: 2px solid #FFD700;
     margin-top: 40px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 footer p {
