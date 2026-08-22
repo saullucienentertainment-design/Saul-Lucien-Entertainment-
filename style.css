@@ -5,13 +5,14 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
     height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    height: 100%;
-    width: 100%;
     font-family: 'Arial', sans-serif;
     color: #333;
     background-image: url('main_background.png');
@@ -20,24 +21,26 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-color: #000;
+    position: relative;
 }
 
-/* Header - Fixed at the top */
+/* Header - Fixed position, overlays background */
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
-    z-index: 1000;
+    z-index: 500;
     padding: 0;
     margin: 0;
+    background: transparent;
 }
 
 header img {
     width: 100%;
     height: auto;
     display: block;
+    opacity: 1;
 }
 
 header h1 {
@@ -48,12 +51,13 @@ header .entity-tag {
     display: none;
 }
 
-/* Main Content - Offset to account for fixed header */
+/* Main Content - Positioned below header, background visible behind */
 main {
-    margin-top: 300px;
-    padding: 40px 20px;
     position: relative;
     z-index: 1;
+    margin-top: 300px;
+    padding: 40px 20px;
+    min-height: calc(100vh - 300px);
 }
 
 .hero {
@@ -98,6 +102,8 @@ footer {
     text-align: center;
     border-top: 2px solid #FFD700;
     margin-top: 40px;
+    position: relative;
+    z-index: 1;
 }
 
 footer p {
@@ -117,6 +123,7 @@ footer a:hover {
 @media (max-width: 768px) {
     main {
         margin-top: 220px;
+        min-height: calc(100vh - 220px);
     }
 
     .hero {
